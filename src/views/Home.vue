@@ -138,18 +138,17 @@ export default {
 
     },
     confirmAdd () {
-      console.log('form = ' + JSON.stringify(this.ruleForm))
+      // console.log('form = ' + JSON.stringify(this.ruleForm))
 
-      // this.$ajax({
-      //   method: 'post',
-      //   url:'/api/getData',
-      //   data: {
-      //     name:'name'
-      //   }
-      // })
       getData({name: 'name'}).then(
         res => {
           console.log('res = ' + JSON.stringify(res))
+          // console.log('res.date = ', res.data.date)
+          console.log('typeof(data) = ', typeof(res.data))
+          var formData = JSON.stringify(res.data)
+          console.log('typeof(formData) = '+ typeof(res.formData))
+          console.log('(formData) = ' + formData)
+
         }
       )      
       this.addDialogVisible = false
