@@ -142,12 +142,11 @@ export default {
 
       getData({name: 'name'}).then(
         res => {
-          console.log('res = ' + JSON.stringify(res))
-          // console.log('res.date = ', res.data.date)
-          console.log('typeof(data) = ', typeof(res.data))
-          var formData = JSON.stringify(res.data)
-          console.log('typeof(formData) = '+ typeof(res.formData))
-          console.log('(formData) = ' + formData)
+          console.log('res = ', JSON.stringify(res))
+          var data = JSON.stringify(res.data)
+
+          console.log('data = ' + data)
+          console.log('data.name = ' + JSON.stringify(res.data.name))
 
         }
       )      

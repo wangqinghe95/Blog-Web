@@ -7,7 +7,7 @@ module.exports = {
     proxy: {
       '/api': {
         // target: 'localhost:8801',
-        target: 'http://192.168.88.133:8888',
+        target: 'http://192.168.88.133:8800',
         // target: 'http://172.30.213.163:8080/dms-server/2.0',
 				
         // ws: true,
